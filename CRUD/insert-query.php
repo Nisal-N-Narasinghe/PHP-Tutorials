@@ -14,7 +14,8 @@
 	$email		= 'Navindu@bestjobslk.com';
 	$password	= '1285password';
 	$is_deleted = 0;
-
+    
+	//Password Encryption
 	$hashed_password = sha1($password);
 
 	$query = "INSERT INTO user ( first_name, last_name, email, password, is_deleted ) VALUES ( '{$first_name}', '{$last_name}', '{$email}', '{$hashed_password}', {$is_deleted} )";
